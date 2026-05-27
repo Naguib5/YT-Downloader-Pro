@@ -1,0 +1,180 @@
+/* YT Downloader Pro v8 — content.css */
+
+/* ── Overlay ──────────────────────────────────────────────────────────── */
+#ytdl-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.85);
+  z-index: 2147483647;
+  display: flex; align-items: center; justify-content: center;
+  backdrop-filter: blur(5px);
+  animation: ytdl-fadein .2s ease;
+}
+@keyframes ytdl-fadein {
+  from { opacity: 0; transform: scale(.95) }
+  to   { opacity: 1; transform: scale(1) }
+}
+
+/* ── Dialog box ───────────────────────────────────────────────────────── */
+#ytdl-box {
+  background: #111118;
+  border: 1px solid #2a2a3a;
+  border-top: 3px solid #00d4ff;
+  border-radius: 14px;
+  padding: 22px 24px 18px;
+  width: 440px; max-width: 96vw;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  direction: rtl;
+  box-shadow: 0 28px 70px rgba(0,0,0,.8);
+  max-height: 90vh; overflow-y: auto;
+}
+#ytdl-box h2 {
+  color: #00d4ff; font-size: 16px; font-weight: 700; margin: 0 0 4px;
+}
+#ytdl-title {
+  color: #7070a0; font-size: 12px; margin: 0 0 10px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+#ytdl-thumb {
+  width: 100%; border-radius: 8px; margin-bottom: 12px;
+  object-fit: cover; max-height: 120px;
+}
+
+/* ── Folder row ───────────────────────────────────────────────────────── */
+#ytdl-folder-row {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 10px;
+  background: #0d0d18; border: 1px solid #2a2a3a;
+  border-radius: 8px; padding: 8px 10px;
+}
+#ytdl-folder-icon { font-size: 16px; flex-shrink: 0; }
+#ytdl-folder-path {
+  font-size: 11px; color: #9090b8; overflow: hidden; flex: 1;
+  text-overflow: ellipsis; white-space: nowrap;
+  direction: ltr; text-align: left; min-width: 0;
+}
+#ytdl-folder-btn {
+  background: #1a2a3a; border: 1px solid #00d4ff; border-radius: 6px;
+  color: #00d4ff; font-size: 11px; padding: 5px 12px; cursor: pointer;
+  white-space: nowrap; font-family: 'Segoe UI', Arial, sans-serif;
+  flex-shrink: 0; transition: all .15s;
+}
+#ytdl-folder-btn:hover { background: #00d4ff; color: #000; }
+
+/* ── Status ───────────────────────────────────────────────────────────── */
+#ytdl-status {
+  font-size: 12px; color: #9090a8; margin-bottom: 10px;
+  min-height: 18px; display: none; text-align: center;
+}
+#ytdl-status.visible { display: block; }
+#ytdl-status.ok   { color: #00e676; }
+#ytdl-status.warn { color: #ff9500; }
+#ytdl-status.err  { color: #ff4444; }
+
+/* ── Progress ─────────────────────────────────────────────────────────── */
+#ytdl-progress-wrap { display: none; margin-bottom: 14px; }
+#ytdl-progress-bar-bg {
+  background: #1a1a2e; border-radius: 50px; height: 14px;
+  overflow: hidden; margin-bottom: 8px; border: 1px solid #2a2a4a;
+}
+#ytdl-progress-bar {
+  height: 100%; width: 0%;
+  background: linear-gradient(90deg,#0099cc,#00d4ff);
+  border-radius: 50px; transition: width .3s ease;
+  box-shadow: 0 0 10px rgba(0,212,255,.4);
+}
+@keyframes ytdl-indeterminate {
+  0%   { transform: translateX(-100%); width: 60%; }
+  100% { transform: translateX(200%);  width: 60%; }
+}
+#ytdl-progress-info {
+  display: flex; justify-content: space-between;
+  font-size: 11px; color: #5a5a7a; margin-bottom: 10px;
+  font-family: 'Consolas', monospace;
+}
+#ytdl-progress-pct   { color: #00d4ff; font-weight: 700; }
+#ytdl-progress-speed { color: #00e676; }
+#ytdl-cancel-btn {
+  width: 100%; background: #1a0a0a; border: 1px solid #ff4444;
+  border-radius: 8px; color: #ff6666; font-size: 12px;
+  padding: 8px; cursor: pointer; transition: all .15s;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+#ytdl-cancel-btn:hover { background: #ff4444; color: #fff; }
+
+/* ── Quality grid ─────────────────────────────────────────────────────── */
+#ytdl-qualities {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; margin-bottom: 8px;
+}
+.ytdl-q-btn {
+  background: #1a1a24; border: 1px solid #2a2a3a; border-radius: 8px;
+  color: #f0f0f8; font-size: 13px; font-weight: 600;
+  padding: 11px 6px; cursor: pointer; text-align: center;
+  transition: all .15s; font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.3;
+}
+.ytdl-q-btn small {
+  display: block; font-size: 10px; font-weight: 400; color: #5a5a7a;
+}
+.ytdl-q-btn:hover {
+  background: #00d4ff; color: #000; border-color: #00d4ff;
+  transform: translateY(-2px); box-shadow: 0 4px 14px rgba(0,212,255,.3);
+}
+.ytdl-q-btn:hover small { color: #0a4455; }
+.ytdl-q-btn.best { background: #0a2233; border-color: #00d4ff; color: #00d4ff; }
+
+#ytdl-audio-btn {
+  width: 100%; background: #180a28; border: 1px solid #6633cc;
+  border-radius: 8px; color: #bb88ff; font-size: 13px; font-weight: 600;
+  padding: 11px; cursor: pointer; margin-bottom: 8px; transition: all .15s;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+#ytdl-audio-btn:hover { background: #aa66ff; color: #000; border-color: #aa66ff; }
+
+#ytdl-close {
+  width: 100%; background: transparent; border: 1px solid #2a2a3a;
+  border-radius: 8px; color: #4a4a6a; font-size: 12px;
+  padding: 8px; cursor: pointer; transition: all .15s;
+  font-family: 'Segoe UI', Arial, sans-serif; margin-top: 4px;
+}
+#ytdl-close:hover { background: #1a1a24; color: #f0f0f8; }
+
+/* ── FAB ──────────────────────────────────────────────────────────────── */
+#ytdl-fab {
+  position: fixed;
+  bottom: 86px;
+  left: 16px;
+  right: auto;
+  z-index: 2147483646;
+  background: linear-gradient(135deg,#00b8d9,#00d4ff);
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0,212,255,.5);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: transform .15s, box-shadow .15s;
+  animation: ytdl-slidein .35s ease;
+  user-select: none;
+  /* Dark/light mode support */
+  --ytdl-bg: linear-gradient(135deg,#00b8d9,#00d4ff);
+}
+@media (prefers-color-scheme: light) {
+  #ytdl-fab {
+    box-shadow: 0 4px 20px rgba(0,150,180,.4);
+  }
+}
+@keyframes ytdl-slidein {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+#ytdl-fab:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 8px 28px rgba(0,212,255,.65);
+}
+#ytdl-fab:active {
+  transform: scale(0.97);
+}

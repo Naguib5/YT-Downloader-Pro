@@ -1,0 +1,39 @@
+2026-05-27 22:10:43,058 INFO ffmpeg found in PATH: E:\playlist downloader\ffmpeg-8.1.1-essentials_build\bin\ffmpeg.EXE
+2026-05-27 22:10:43,058 INFO ffmpeg: E:\playlist downloader\ffmpeg-8.1.1-essentials_build\bin
+2026-05-27 22:10:43,059 INFO self_register: updated ytdl_host.bat -> E:\playlist downloader\New folder\YT-Downloader-Pro\native_host\ytdl_host.exe
+2026-05-27 22:10:43,060 INFO self_register: updated manifest -> E:\playlist downloader\New folder\YT-Downloader-Pro\native_host\_internal\ytdl_host.bat
+2026-05-27 22:10:43,060 INFO self_register: Registry updated -> E:\playlist downloader\New folder\YT-Downloader-Pro\native_host\_internal\com.ytdl.pro.json
+2026-05-27 22:10:43,060 INFO ytdl_host v18 started
+2026-05-27 22:10:43,061 DEBUG got: register_extension
+2026-05-27 22:10:43,676 INFO EOF — shutting down
+2026-05-27 22:11:05,131 INFO ffmpeg found in PATH: E:\playlist downloader\ffmpeg-8.1.1-essentials_build\bin\ffmpeg.EXE
+2026-05-27 22:11:05,131 INFO ffmpeg: E:\playlist downloader\ffmpeg-8.1.1-essentials_build\bin
+2026-05-27 22:11:05,132 DEBUG self_register: Registry already OK
+2026-05-27 22:11:05,132 INFO ytdl_host v18 started
+2026-05-27 22:11:05,132 DEBUG got: ping
+2026-05-27 22:11:19,346 DEBUG got: ping
+2026-05-27 22:11:38,550 DEBUG got: ping
+2026-05-27 22:11:40,460 DEBUG got: browse_folder
+2026-05-27 22:11:51,099 DEBUG got: download
+2026-05-27 22:11:51,099 INFO === Download: host=youtube.com q=720 url=https://www.youtube.com/watch?v=TWymBGf5TlI intercepted=0
+2026-05-27 22:11:52,630 INFO YouTube: trying client=ios
+2026-05-27 22:11:54,067 WARNING YouTube client=ios failed: ERROR: [youtube] TWymBGf5TlI: Requested format is not available. Use --list-formats for a list of av
+2026-05-27 22:11:54,067 INFO YouTube: trying client=tv_embedded
+2026-05-27 22:12:03,352 INFO YouTube OK: client=tv_embedded fmt=136+140 res=720p codec=avc1.4d401f
+2026-05-27 22:12:54,193 DEBUG got: ping
+2026-05-27 22:13:03,412 DEBUG got: ping
+2026-05-27 22:13:05,517 DEBUG got: download
+2026-05-27 22:13:05,518 INFO === Download: host=youtube.com q=720 url=https://www.youtube.com/watch?v=TWymBGf5TlI intercepted=0
+2026-05-27 22:13:05,519 INFO YouTube: trying client=ios
+2026-05-27 22:13:06,726 WARNING YouTube client=ios failed: ERROR: [youtube] TWymBGf5TlI: Requested format is not available. Use --list-formats for a list of av
+2026-05-27 22:13:06,726 INFO YouTube: trying client=tv_embedded
+2026-05-27 22:13:15,818 INFO YouTube OK: client=tv_embedded fmt=136+140 res=720p codec=avc1.4d401f
+2026-05-27 22:22:33,827 INFO EOF — shutting down
+2026-05-27 22:24:17,568 INFO ffmpeg found in PATH: E:\playlist downloader\ffmpeg-8.1.1-essentials_build\bin\ffmpeg.EXE
+2026-05-27 22:24:17,569 INFO ffmpeg: E:\playlist downloader\ffmpeg-8.1.1-essentials_build\bin
+2026-05-27 22:24:17,591 INFO self_register: updated ytdl_host.bat -> E:\playlist downloader\YT-Downloader-Pro\native_host\ytdl_host.exe
+2026-05-27 22:24:17,606 INFO self_register: updated manifest -> E:\playlist downloader\YT-Downloader-Pro\native_host\_internal\ytdl_host.bat
+2026-05-27 22:24:17,606 INFO self_register: Registry updated -> E:\playlist downloader\YT-Downloader-Pro\native_host\_internal\com.ytdl.pro.json
+2026-05-27 22:24:17,607 INFO ytdl_host v18 started
+2026-05-27 22:24:17,607 DEBUG got: register_extension
+2026-05-27 22:24:18,081 INFO EOF — shutting down

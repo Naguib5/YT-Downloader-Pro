@@ -1,0 +1,9 @@
+{
+  "name": "com.ytdl.pro",
+  "description": "YT Downloader Pro Native Host",
+  "path": "E:\\playlist downloader\\YT-Downloader-Pro\\native_host\\_internal\\ytdl_host.bat",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://imfkhbibjnlddbkkmlokmpddkhkpdiid/"
+  ]
+}
